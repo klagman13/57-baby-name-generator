@@ -123,7 +123,58 @@ let girl_names_SZ = [
 "Zuri",
 "Zora"
 ]
-boy_names_AF = ["a", "b", "c"]
+boy_names_AF = [
+"Aidan",
+"Alex",
+"Aaron",
+"Austin",
+"Benjamin",
+"Braiden",
+"Bennet",
+"Brody",
+"Christian",
+"Cole",
+"Calvin",
+"Carson",
+"Dean",
+"Dallas",
+"Dante",
+"Derick",
+"Eli",
+"Evan",
+"Emmet",
+"Ethan",
+"Finn",
+"Felix",
+"Frank",
+"Frances"
+]
+let boy_names_GL = [
+"Garry",
+"Griffin",
+"Gavin",
+"Grant",
+"Hunter",
+"Henry",
+"Hudson",
+"Harison",
+"Isaac",
+"Ian",
+"Ivan",
+"Isaiah",
+"Jack",
+"Jorge",
+"John",
+"Josh",
+"Kaidan",
+"Kyle",
+"Kaleb",
+"Ken",
+"Luis",
+"Liam",
+"Logan",
+"Levi"
+]
 game.splash("welcome to baby name generator")
 game.splash("what gender?")
 letterOfNames = game.askForNumber("press 1 for boy, press 2 for girl, press 3 for neutral", 1)
