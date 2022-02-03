@@ -24,23 +24,135 @@ function names (num: number) {
 let letterOfNames = 0
 let girl_names_AF: string[] = []
 girl_names_AF = [
-"Belinda",
 "Amy",
-"Liz",
-"Ellie",
-"Cori",
-"Danielle"
+"Avery",
+"Abby",
+"Anne",
+"Blair",
+"Bianca",
+"Brianna",
+"Beth",
+"Clara",
+"Catherine",
+"Camilla",
+"Celeste",
+"Diana",
+"Daisy",
+"Demi",
+"Destiny",
+"Esther",
+"Emmy",
+"Everly",
+"Elena",
+"Faith",
+"Fiona",
+"Felicity",
+"Francesa"
 ]
 let girl_names_GL = [
-"Gerry",
-"Ham",
-"Ida",
-"Jane",
-"Kelly",
-"Lex"
+"Grace",
+"Gabi",
+"Giselle",
+"Gemma",
+"Harlow",
+"Heidi",
+"Helena",
+"Haley",
+"Isabella",
+"Itzel",
+"Ivory",
+"Isla",
+"Juliana",
+"Jasmine",
+"Jacklyn",
+"Julie",
+"Katie",
+"Kimberly",
+"Kali",
+"Kendall",
+"Louisa",
+"Layla",
+"Lucie",
+"Lilly"
 ]
-let neutral_names = ["a", "b", "c"]
-neutral_names = ["a", "b", "c"]
+let boy_names_AF = [
+"Maria",
+"Melody",
+"Margret",
+"Maya",
+"Nicole",
+"Naomi",
+"Noelle",
+"Nora",
+"Oliva",
+"Opal",
+"Olive",
+"Ophelia",
+"Phoebe",
+"Pearl",
+"Priscilla",
+"Paris",
+"Queem",
+"Quincy",
+"Quetzaly",
+"Quest",
+"Rose",
+"Rachel",
+"Remi",
+"Rebecca"
+]
+let girl_names_SZ = [
+"Scarlet",
+"Sofia",
+"Samantha",
+"Sara",
+"Thea",
+"Talia",
+"Tiana",
+"Teresa",
+"Ursla",
+"Uriel",
+"Ulyssa",
+"Urvi",
+"Victoria",
+"Violet",
+"Veronica",
+"Valarie",
+"Winne",
+"Wendy",
+"Winona",
+"Wilma",
+"Ximena",
+"Xia",
+"Xyla",
+"Xarani",
+"Yasmine",
+"Yareli",
+"Yuna",
+"Yaneli",
+"Zoe",
+"Zara",
+"Zuri",
+"Zora"
+]
+boy_names_AF = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
 game.splash("welcome to baby name generator")
 game.splash("what gender?")
 letterOfNames = game.askForNumber("press 1 for boy, press 2 for girl, press 3 for neutral", 1)
