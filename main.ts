@@ -2,17 +2,6 @@ function names (num: number) {
     if (num == 1) {
         game.splash("what letter do you like press 1, 2, 3, or 4 for letters: A-F, G-L, M-R, or S-Z")
         letterOfNames = game.askForNumber("A-F (1), G-L(2), M-R()4, or S-Z(5)", 1)
-        if (num == 1) {
-            for (let value of girl_names_AF) {
-                game.splash(value)
-            }
-        } else if (num == 2) {
-        	
-        } else if (num == 3) {
-        	
-        } else if (num == 4) {
-        	
-        }
     } else if (num == 2) {
         game.splash("what letter do you like")
         letterOfNames = game.askForNumber("", 1)
@@ -22,8 +11,7 @@ function names (num: number) {
     }
 }
 let letterOfNames = 0
-let girl_names_AF: string[] = []
-girl_names_AF = [
+let girl_names_AF = [
 "Amy",
 "Avery",
 "Abby",
@@ -135,24 +123,7 @@ let girl_names_SZ = [
 "Zuri",
 "Zora"
 ]
-boy_names_AF = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player)
+boy_names_AF = ["a", "b", "c"]
 game.splash("welcome to baby name generator")
 game.splash("what gender?")
 letterOfNames = game.askForNumber("press 1 for boy, press 2 for girl, press 3 for neutral", 1)
