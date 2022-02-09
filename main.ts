@@ -75,6 +75,25 @@ let girl_names_GL = [
 "Lucie",
 "Lilly"
 ]
+let girlNamesMR = [
+"Maria",
+"Mary",
+"Megan",
+"Miranda",
+"Nancy",
+"Noelia",
+"Nessa",
+"Nina",
+"Olivia",
+"Olympia",
+"Olga",
+"Olina",
+"Penelope",
+"Peyton",
+"Pheobe",
+"Paige",
+""
+]
 let boy_names_AF = [
 "Maria",
 "Melody",
