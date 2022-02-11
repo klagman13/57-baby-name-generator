@@ -75,7 +75,7 @@ let girl_names_GL = [
 "Lucie",
 "Lilly"
 ]
-let boy_names_AF = [
+let girl_names_MR = [
 "Maria",
 "Melody",
 "Margret",
@@ -135,7 +135,7 @@ let girl_names_SZ = [
 "Zuri",
 "Zora"
 ]
-boy_names_AF = [
+let boy_names_AF = [
 "Aidan",
 "Alex",
 "Aaron",
@@ -186,6 +186,32 @@ let boy_names_GL = [
 "Liam",
 "Logan",
 "Levi"
+]
+let boy_names_mr = [
+"Manuel",
+"Martin",
+"Marcus",
+"Mathew",
+"Noel",
+"Nate",
+"Noah",
+"Nick",
+"Owen",
+"Omar",
+"Otis",
+"Oliver",
+"Peter",
+"Parker",
+"Paul",
+"Patrick",
+"Quinten",
+"Quinn",
+"",
+"",
+"",
+"",
+"",
+""
 ]
 game.splash("welcome to baby name generator")
 game.splash("what gender?")
