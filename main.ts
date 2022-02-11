@@ -1,27 +1,54 @@
-function names (num: number) {
+function allNames (num: number) {
     if (num == 1) {
         game.splash("what letter do you like press 1, 2, 3, or 4 for letters: A-F, G-L, M-R, or S-Z")
-        letterOfNames = game.askForNumber("A-F (1), G-L(2), M-R()4, or S-Z(5)", 1)
-        if (num == 1) {
-            for (let value of girl_names_AF) {
+        letterOfNames = game.askForNumber("A-F (1), G-L(2), M-R(3), or S-Z(4)", 1)
+        if (letterOfNames == 1) {
+            for (let value of boy_names_AF) {
                 game.splash(value)
             }
-        } else if (num == 2) {
-        	
-        } else if (num == 3) {
-        	
-        } else if (num == 4) {
+        } else if (letterOfNames == 2) {
+            for (let value of boy_names_GL) {
+                game.splash(value)
+            }
+        } else if (letterOfNames == 3) {
+            for (let value of boy_names_mr) {
+                game.splash(value)
+            }
+        } else if (letterOfNames == 4) {
+            for (let value of boy_names_GL) {
+                game.splash(value)
+            }
+        } else {
         	
         }
     } else if (num == 2) {
-        game.splash("what letter do you like")
-        letterOfNames = game.askForNumber("", 1)
+        game.splash("what letter do you like: A-F (1), G-L(2), M-R()4, or S-Z(5)")
+        letterOfNames = game.askForNumber("A-F (1), G-L(2), M-R()4, or S-Z(5)", 1)
+        if (letterOfNames == 1) {
+            for (let value of girl_names_AF) {
+                game.splash(value)
+            }
+        } else if (letterOfNames == 2) {
+            for (let value of girl_names_GL) {
+                game.splash(value)
+            }
+        } else if (letterOfNames == 3) {
+        	
+        } else if (letterOfNames == game.askForNumber("", 1)) {
+        	
+        }
     } else if (num == 3) {
         letterOfNames = game.askForNumber("", 1)
         game.splash("what letter do you like")
+    } else {
+    	
     }
 }
 let letterOfNames = 0
+let boy_names_mr: string[] = []
+let boy_names_GL: string[] = []
+let boy_names_AF: string[] = []
+let girl_names_GL: string[] = []
 let girl_names_AF: string[] = []
 girl_names_AF = [
 "Amy",
@@ -49,7 +76,7 @@ girl_names_AF = [
 "Felicity",
 "Francesa"
 ]
-let girl_names_GL = [
+girl_names_GL = [
 "Grace",
 "Gabi",
 "Giselle",
@@ -75,7 +102,7 @@ let girl_names_GL = [
 "Lucie",
 "Lilly"
 ]
-let boy_names_AF = [
+let girl_names_MR = [
 "Maria",
 "Melody",
 "Margret",
@@ -161,7 +188,7 @@ boy_names_AF = [
 "Frank",
 "Frances"
 ]
-let boy_names_GL = [
+boy_names_GL = [
 "Garry",
 "Griffin",
 "Gavin",
@@ -187,7 +214,33 @@ let boy_names_GL = [
 "Logan",
 "Levi"
 ]
+boy_names_mr = [
+"Manuel",
+"Martin",
+"Marcus",
+"Mathew",
+"Noel",
+"Nate",
+"Noah",
+"Nick",
+"Owen",
+"Omar",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+]
 game.splash("welcome to baby name generator")
 game.splash("what gender?")
 letterOfNames = game.askForNumber("press 1 for boy, press 2 for girl, press 3 for neutral", 1)
-names(1)
+allNames(1)
